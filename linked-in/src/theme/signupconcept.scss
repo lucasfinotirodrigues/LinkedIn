@@ -1,0 +1,113 @@
+
+
+
+.sign-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .header{
+        flex: 1;
+        .title{
+            img{
+                    
+                    width: 110px;
+                     padding-top: 8px;
+                    // padding-bottom: 18px;
+
+                    // margin-bottom: -40px;
+            }
+        }
+        
+        
+    }
+    .login-container{
+        flex:2
+    }
+    .form{
+        --background: none;
+        background: none;
+        max-width: 300px;
+        margin: 0 auto;
+        ion-item{
+            --border-radius:5px;
+            --background:#63869b;
+            --border-color:none;    
+            --highligth-height:0;
+            color:#fafafa;
+             margin-bottom: 20px;
+             margin-left: 25px;
+             margin-right: 25px;
+             ion-icon{  
+                color:#fafafa;
+             }
+           
+             
+
+        }
+    }
+
+    .sign-up-container{
+        position:absolute;
+        bottom: 0;
+        height: 32%;
+        width: 100%;
+        margin-top: 0;        
+        padding-top: 0;
+        padding-bottom: 75%;
+        transition: all 1.0075s;
+        border-radius: 50px 50px 0 0;
+
+
+        &.active{
+            height: calc(100% - 125px);
+        }
+
+
+        .toggle-text{
+            padding-top: 10px;
+            color: #fafafa;
+            font-size: 14px;
+        }
+        .form{
+            ion-item{
+                --background: #2bc1b1;
+            }
+        }
+    }
+}
+
+// Cores do gradiente
+.gradient-1{
+    --background: linear-gradient(180deg, rgba(132,163,183,1) 0%, rgba(97,135,157,1) 100%);
+    background: linear-gradient(180deg, rgba(132,163,183,1) 0%, rgba(97,135,157,1) 100%);
+}
+
+.gradient-2{
+    --background: linear-gradient(180deg, rgba(35,224,200,1) 0%, rgba(73,180,181,1) 100%);
+    background: linear-gradient(180deg, rgba(35,224,200,1) 0%, rgba(73,180,181,1) 100%);
+}
+ion-icon{
+    color:#383838
+}
+
+.pass{
+    color:#ffffff !important;
+    margin-top: -30;
+}
+.native-input.sc-ion-input-md{
+    color: #2c2c2c;
+}
+
+.green-button{
+    --background: rgba(35,224,200,1);
+    color: #ffffff;
+    padding: -30px;
+}
+.gray-button{
+    --background: rgba(97,135,157,1);
+    color: #ffffff;
+}
+.list-md{
+    padding: -15px;
+}

@@ -1,0 +1,94 @@
+<ion-content>
+
+  <div class="sign-container gradient-1">
+
+          <!-- Cabeçalho do projeto -->
+
+    <div class="header">
+
+          <!-- Título do projeto -->
+
+      <div class="title ion-text-center">
+
+          <!-- Imagem do projeto -->
+
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="">
+      </div>
+         <!-- Campo Login do projeto -->
+
+    <div class="login-container ">
+
+      <!--Campo E-mail-->
+
+      <ion-list lines="none" class="form">
+        <ion-item>
+          <ion-label class="pass">E-mail</ion-label>
+          <ion-input class="Email" class="ion-text-right" placeholder="Digite seu e-mail"></ion-input>
+          <ion-icon slot="end" name="at"></ion-icon>
+        </ion-item>
+      
+
+      <!--Campo Senha-->
+
+      
+        <ion-item>
+          <ion-label class="pass">Senha</ion-label>
+          <ion-input type="password" class="ion-text-right"  placeholder="Digite sua senha" [type]="mostrarsenha ? 'text' : 'password' "></ion-input>
+            <ion-icon slot="end" name="eye" (click) ="mostrar()" ></ion-icon>
+        </ion-item>
+          
+      </ion-list>
+      <div class="ion-text-center">
+        <ion-button class="green-button">
+          Entrar
+        </ion-button>
+      </div>
+
+    </div>
+
+    </div>
+       
+
+     <!-- Campo Cadastro do projeto -->
+
+    <div class="sign-up-container gradient-2" [ngClass]="{'active':signupView}">
+
+      <div class="toggle-text ion-text-center"tappable (click)=" toggleSignUpView()">
+        <span class="down" *ngIf="!signupView">Cadsatre-se Aqui</span>
+        <span  *ngIf="signupView">Entrar</span>
+        
+
+      
+
+     
+      <!--Campo E-mail-->
+      
+      <ion-list lines="none" class="form">    
+        <ion-item>
+          <ion-label class="pass">E-mail</ion-label>
+          <ion-input class="Email" class="ion-text-right" placeholder="Digite seu e-mail"></ion-input>
+          <ion-icon slot="end" name="at"></ion-icon>
+        </ion-item>
+      
+
+      <!--Campo Senha-->
+      
+        <ion-item>
+          <ion-label class="pass">Senha</ion-label>
+          <ion-input type="password" class="ion-text-right"  placeholder="Digite sua senha" [type]="mostrarsenha ? 'text' : 'password' "></ion-input>
+            <ion-icon slot="end" name="eye" (click) ="mostrar()" ></ion-icon>
+        </ion-item>
+        <div class="ion-text-center">
+          <ion-button class="gray-button">
+            Entrar
+          </ion-button>
+        </div>
+          
+      </ion-list>
+    </div>
+    </div>
+
+
+  </div>
+ 
+</ion-content>
